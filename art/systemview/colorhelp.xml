@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<customView name="system">
+
+		<helpsystem name="help">
+			<pos>0.3 0.015</pos>
+			<size>0.47 0.20</size>
+			<iconColor>${baseColor}</iconColor>
+			<fontSize>0.021</fontSize>
+			<fontPath>./art/amiga4ever pro.ttf</fontPath>
+		</helpsystem>
+
+	</customView>
+	
+	<customView name="basic,detailed">
+
+		<helpsystem name="help">
+			<pos>0.1 0.015</pos>
+			<size>0.47 0.20</size>
+			<iconColor>${baseColor}</iconColor>
+			<fontSize>0.021</fontSize>
+			<fontPath>./art/amiga4ever pro.ttf</fontPath>
+		</helpsystem>
+
+	</customView>
+
+</theme>

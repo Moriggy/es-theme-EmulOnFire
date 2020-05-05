@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="system">
+	
+		<video name="videobox" extra="true">
+			<visible>false</visible>  
+			<zIndex>1</zIndex>
+		</video>
+		
+		<image name="background" extra="static">
+			<path>${backgroundImage}</path>
+		</image>
+		
+		<carousel name="systemcarousel">
+			<color>FAFAFFA0</color>
+			<colorEnd>FAFAFFD0</colorEnd>
+			<systemInfoDelay>700</systemInfoDelay>
+			<pos>0 0.3837</pos>
+			<size>1 0.2325</size>
+			<zIndex>4</zIndex>
+		</carousel>	
+		
+		<image name="carousel-inner" extra="true">
+			<path>./../carousel.png</path>
+			<color>FFFFFFFF</color>
+			<origin>0 0</origin>
+			<pos>0 0.3837</pos>
+			<size>1 0.2325</size>
+			<zIndex>3</zIndex>
+		</image>
+		
+		<text name="systemInfo">
+			<pos>0 0.64</pos>
+			<size>1 0.25</size>
+			<backgroundColor>0000FF00</backgroundColor>
+			<color>${systemInfoColor}</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+			<reflexion>0.20 0.0</reflexion>
+		</text>
+		
+		<image name="carousel-shadow" extra="true">
+		  <path>./../shadow.png</path>
+		  <color>00000040</color>
+		  <pos>0 0.6162</pos>
+		  <origin>0 0</origin>
+		  <size>1 0.025</size>
+		  <zIndex>13</zIndex>
+		</image>
+		
+	</view>
+
+</theme>

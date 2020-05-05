@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+		<video name="videobox" extra="true">
+			<path>./art/sitemasvideos/${system.name}.mp4</path>
+			<delay>0.20</delay>
+			<color>FFFFFFFF</color>
+			<effect>none</effect>			
+		</video>
+	</view>
+	
+</theme>

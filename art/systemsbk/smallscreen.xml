@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<image name="box" extra="true">
+			<path>{random:image}</path>
+			<color>FFFFFFFF</color>  
+			<size>0.3 0.3</size>
+			<pos>0.35 0.425</pos>
+			<roundCorners>0.05</roundCorners>
+			<visible>true</visible>
+		</image>   
+	</view>
+	
+</theme>

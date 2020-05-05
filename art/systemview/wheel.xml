@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+    
+		<image name="background" extra="static">
+			<path>${backgroundImage}</path>
+		</image>
+		
+		<video name="videobox" extra="true">
+			<pos>0.48 0.35</pos>
+			<maxSize>0.40 0.55</maxSize>
+			<roundCorners>0.05</roundCorners>
+			<visible>true</visible>
+			<zIndex>4</zIndex>
+		</video>
+		
+		<carousel name="systemcarousel">
+			<type>vertical_wheel</type>
+			<size>0.44 1.1</size>
+			<pos>0 0.01</pos>
+			<size>0.44 1.5</size>
+			<origin>0 0</origin>
+			<color>00000000</color>
+			<logoScale>2</logoScale>
+			<logoSize>0.18 0.15</logoSize>
+			<logoRotation>-14</logoRotation>
+			<logoRotationOrigin>-2.9 0.2</logoRotationOrigin>
+			<logoAlignment>center</logoAlignment>
+			<maxLogoCount>5</maxLogoCount>
+			<systemInfoDelay>0.1</systemInfoDelay>
+			<zIndex>3</zIndex>
+		</carousel>
+
+		<text name="systemInfo">
+			<pos>0.175 0.67</pos>
+			<size>1 0.25</size>
+			<backgroundColor>0000FF00</backgroundColor>
+			<color>${systemInfoColor}</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+			<reflexion>0.20 0.0</reflexion>
+		</text>
+    
+	</view>
+	
+</theme>

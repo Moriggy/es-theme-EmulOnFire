@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	
+	<formatVersion>7</formatVersion>
+	<include>./theme.xml</include>
+	
+	<view name="basic">
+	
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>${backgroundImage}</path>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<image name="logo">
+			<pos>0.5 0.1</pos>
+			<maxSize>0.3 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+		</image>
+		
+		<image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>   
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>      
+			<color>${bottomBarColor}</color>
+			<zIndex>20</zIndex>
+		</image>
+		
+		<textlist name="gamelist">
+			<selectorImagePath>./art/selector.png</selectorImagePath>
+			<selectorColor>719CC6</selectorColor>
+			<selectedColor>719CC6</selectedColor>
+			<primaryColor>dee0e8</primaryColor>
+			<secondaryColor>eac428</secondaryColor>
+			<fontPath>./art/amiga4ever pro.ttf</fontPath>
+			<fontSize>0.030</fontSize>
+			<pos>0.025 0.18</pos>
+			<size>0.950 0.73</size>
+			<alignment>center</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<forceUppercase>1</forceUppercase>
+			<scrollSound>./art/scroll.wav</scrollSound>
+		</textlist>
+		
+	</view>
+
+</theme>

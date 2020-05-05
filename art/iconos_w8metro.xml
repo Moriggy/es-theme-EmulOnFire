@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+ <view name="menu">
+    <menuIcons name="menuicons">
+      <iconKodi>./art/iconsW8-Metro/Kodi.png</iconKodi>
+      <iconSystem>./art/iconsW8-Metro/System.png</iconSystem>
+      <iconUpdates>./art/iconsW8-Metro/Updates.png</iconUpdates>
+      <iconGames>./art/iconsW8-Metro/Games.png</iconGames>
+      <iconControllers>./art/iconsW8-Metro/Controllers.png</iconControllers>
+      <iconUI>./art/iconsW8-Metro/UI.png</iconUI>
+      <iconSound>./art/iconsW8-Metro/Sound.png</iconSound>
+      <iconNetwork>./art/iconsW8-Metro/Network.png</iconNetwork>
+      <iconScraper>./art/iconsW8-Metro/Scraper.png</iconScraper>
+      <iconAdvanced>./art/iconsW8-Metro/Advanced.png</iconAdvanced>
+      <iconQuit>./art/iconsW8-Metro/Quit.png</iconQuit>
+      <iconRestart>./art/iconsW8-Metro/Restart.png</iconRestart>
+      <iconShutdown>./art/iconsW8-Metro/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./art/iconsW8-Metro/Fastshutdown.png</iconFastShutdown>
+      <iconRetroachievements>./art/iconsW8-Metro/Contest.png</iconRetroachievements>
+    </menuIcons>
+  </view>
+</theme>

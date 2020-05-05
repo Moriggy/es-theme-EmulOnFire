@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <variables>
+    <baseColor>e95814</baseColor>
+	<colorHora>fc3d39</colorHora>
+	<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+	<ColorSeleccionMenu>a71930</ColorSeleccionMenu>
+	<primaryColorMenu>ffffff</primaryColorMenu>
+	<secundaryColorMenu>59626a</secundaryColorMenu>
+	<ColordelSelectorMenu>fa9f1e</ColordelSelectorMenu>
+	<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+	<pauseColorIconos>f66733</pauseColorIconos>
+    <pauseColorTexto>e5a00d</pauseColorTexto>
+	<!-- COLORES MENU START Y SELECT: FONDO ,TEXTO ,TEXTO SELECCIONADO ,SELECTOR ,DEGRADADO GENERAL ,SEPARADOR ,TITULO DEL MENU -->
+	<menucolorfondo>6a1310</menucolorfondo>
+	<menucolortexto>4d4f53</menucolortexto>
+	<menucolortextoselecionado>666666</menucolortextoselecionado>
+	<gradientEndColor>ff8200</gradientEndColor>
+    <glowColor>e9581420</glowColor>
+	<menucolorseparador>dc380f</menucolorseparador>
+	<menucolortitulo>ff6a00</menucolortitulo>
+	<!-- <centerFadeColor>8b000050</centerFadeColor> -->
+    <backgroundColor>ed812b</backgroundColor>
+    <bottomBarColor>8b0000</bottomBarColor>
+    <systemInfoColor>cc0000</systemInfoColor>
+  </variables>
+</theme>

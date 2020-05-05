@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>4</formatVersion>
+	<view name="system">
+		<image name="box" extra="true">
+			<path>{random:thumbnail}</path>
+			<color>FFFFFFFF</color>  
+			<pos>0.4 0.325</pos>
+			<roundCorners>0.05</roundCorners>
+			<visible>true</visible>
+		</image>   
+	</view>
+
+</theme>

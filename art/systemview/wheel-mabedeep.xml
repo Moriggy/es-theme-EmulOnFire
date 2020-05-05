@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<formatVersion>4</formatVersion>
+	<variables>
+		<mconsolaswheel>0.008 0.485</mconsolaswheel>
+	</variables>
+	<view name="system">
+	
+		<image name="background" extra="static">
+			<path>${backgroundImage_B}</path>
+		</image>
+		
+		<video name="videobox" extra="true">
+			<size>0.32 0.437</size>
+			<pos>0.34 0.355</pos>
+			<roundCorners>0</roundCorners>
+			<visible>true</visible>  
+			<zIndex>1</zIndex>
+		</video>
+    
+		<carousel name="systemcarousel">
+			<type>vertical_wheel</type>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<color>FFFFFF00</color>
+			<logoScale>1.5</logoScale>
+			<logoSize>0.2 0.15</logoSize>
+			<logoRotation>-10</logoRotation>
+			<logoRotationOrigin>4 0.5</logoRotationOrigin>
+			<logoAlignment>right</logoAlignment>
+			<maxLogoCount>5</maxLogoCount>
+			<zIndex>3</zIndex>	 
+		</carousel>
+		
+		<!-- Puntero de sistemas -->
+
+		<image name="logo2" extra="true">
+			<tile>false</tile>
+			<path>./art/pointer/${system.theme}.png</path>
+			<origin>1 0.5</origin>
+			<pos>1 0.5</pos>
+			<size>0.025 0.08</size>
+			<color>FFFFFFFF</color>
+			<zIndex>3</zIndex>
+		</image>
+
+		<!-- Numero de juegos del sistema -->
+		
+		<text name="systemInfo">
+			<pos>0 0.575</pos>
+			<size>0.980 0.050</size>
+			<alignment>right</alignment>
+			<backgroundColor>0000FF00</backgroundColor>
+			<color>${systemInfoColor}</color>
+			<glowColor>${glowColor}</glowColor>
+			<glowSize>2</glowSize>
+			<reflexion>0.35 0.0</reflexion>
+		</text>
+
+	</view>
+	
+</theme>

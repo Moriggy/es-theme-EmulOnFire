@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+
+	<formatVersion>7</formatVersion>
+	
+	<variables>
+	
+		<baseColor>8b0000</baseColor>
+		<!-- COLORES GAMELIST: PRIMARIO ,SECUNDARIO ,SELECCION ,SELECTOR -->
+		<ColorSeleccionMenu>e32934</ColorSeleccionMenu>
+		<primaryColorMenu>ffffff</primaryColorMenu>
+		<secundaryColorMenu>d7d7d8</secundaryColorMenu>
+		<ColordelSelectorMenu>1c1c1c</ColordelSelectorMenu>
+		<!-- COLORES HELP HELPSYSTEM: ICONOS Y TEXTO -->
+		<pauseColorIconos>cecece</pauseColorIconos>
+		<pauseColorTexto>efe9e5</pauseColorTexto>
+		<!-- COLORES MENU START Y SELECT: FONDO ,TEXTO ,TEXTO SELECCIONADO ,SELECTOR ,DEGRADADO GENERAL ,SEPARADOR ,TITULO DEL MENU -->
+		<menucolorfondo>e9e9e9</menucolorfondo>
+		<menucolortexto>969696</menucolortexto>
+		<menucolortextoselecionado>000000</menucolortextoselecionado>
+		<gradientEndColor>6b2020</gradientEndColor>
+		<glowColor>Ab000020</glowColor>
+		<menucolorseparador>828a87</menucolorseparador>
+		<menucolortitulo>FAFAFA</menucolortitulo>
+		<!-- <centerFadeColor>8b000050</centerFadeColor> -->
+		<backgroundColor>252525</backgroundColor>
+		<bottomBarColor>8b0000c0</bottomBarColor>
+		<systemInfoColor>DDDDDDD8</systemInfoColor>
+		<colorHora>FFFFFF</colorHora>
+		<backgroundImage>./art/fondo.png</backgroundImage>
+		<bgGamelistImage>./art/bgGamelists/</bgGamelistImage>
+		<bgVistaBasica>./art/bgbasicos/</bgVistaBasica>
+		<backgroundImage>./art/fondo2.png</backgroundImage>
+		<backgroundImage_B>./art/fondo.png</backgroundImage_B>
+		<backgroundImage_C>./art/gamelist.png</backgroundImage_C>
+		<extraBorders>./art/extraborders/</extraBorders>
+		<mconsolaswheel>0.5 0.5</mconsolaswheel>
+		<tilesViewName>Tiles</tilesViewName>
+		<detailedViewName>Detailed</detailedViewName>
+		<roundBorderSubsetName>Round borders</roundBorderSubsetName>
+		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
+		<previewBarSubsetName>Preview bar</previewBarSubsetName>
+		<videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
+		<zoomboxesSubsetName>Zoom boxes</zoomboxesSubsetName>
+		<hideselectionSubsetName>Hide selection</hideselectionSubsetName>
+		<systemBackgroundName>System background</systemBackgroundName>
+		<helpSubsetName>Help icons</helpSubsetName>
+		<systemViewName>System view</systemViewName>
+		<colored>Colored</colored>
+		<subset.colorset>Colorset</subset.colorset>
+		<subset.shader>Shader</subset.shader>
+	</variables>
+	
+	<!-- Español -->
+	
+	<variables lang="es">
+		<tilesViewName>Viñetas</tilesViewName>
+		<detailedViewName>Detalle Animado</detailedViewName>
+		<basicGridName>Rejilla GRID</basicGridName>
+		<carouselViewName>Carrousel</carouselViewName>
+		<atardecer>Atardecer</atardecer>
+		<españa>España</españa>
+		<hielo>Hielo</hielo>
+		<marron>Marron</marron>
+		<rosachicle>Rosachicle</rosachicle>
+		<verdelimon>Verdelimon</verdelimon>
+		<cuarentena>Cuarentena</cuarentena>
+		<blue>Azul</blue>
+		<red>Rojo</red>
+		<green>Verde</green>
+		<yellow>Amarillo</yellow>
+		<none>Ninguno</none>
+		<roundBorderSubsetName>Bordes Redondeados</roundBorderSubsetName>
+		<blinkBorderSubsetName>Bordes Esquinados</blinkBorderSubsetName>
+		<yes>Si</yes>
+		<no>No</no>
+		<systemBackgroundName>Fondo</systemBackgroundName>
+		<systemViewName>Vista de Sistema</systemViewName>
+		<previewBarSubsetName>Panel de vista previa</previewBarSubsetName>
+		<videoboxesSubsetName>Mostrar el video en modo cuadro</videoboxesSubsetName>
+		<zoomboxesSubsetName>Zoom en las cajas</zoomboxesSubsetName>
+		<hideselectionSubsetName>Ocultar selección</hideselectionSubsetName>
+		<helpSubsetName>Iconos de ayuda</helpSubsetName>
+		<colored>Colores</colored>
+		<iconosmenu>Iconos del menu</iconosmenu>
+		<subset.colorset>Juego de colores</subset.colorset>
+		<subset.shader>Shader Efectos TV</subset.shader> 
+	</variables>
+	
+	<!-- Opciones de colores  -->
+	
+    <include subset="colorset" name="Hielo">./art/colors/hielo.xml</include>  
+    <include subset="colorset" name="Azul">./art/colors/blue.xml</include>
+    <include subset="colorset" name="Verde">./art/colors/green.xml</include>
+    <include subset="colorset" name="Amarillo">./art/colors/yellow.xml</include>
+    <include subset="colorset" name="Violeta">./art/colors/violet.xml</include>
+    <include subset="colorset" name="Cyan">./art/colors/cyan.xml</include>
+	<include subset="colorset" name="Atardecer">./art/colors/atardecer.xml</include>
+	<include subset="colorset" name="Cuarentena">./art/colors/cuarentena.xml</include>
+	<include subset="colorset" name="España">./art/colors/españa.xml</include>
+	<include subset="colorset" name="Marron">./art/colors/marron.xml</include>
+	<include subset="colorset" name="Mason">./art/colors/mason.xml</include>
+	<include subset="colorset" name="Rosachicle">./art/colors/rosachicle.xml</include>
+	<include subset="colorset" name="Verdelimon">./art/colors/verdelimon.xml</include>
+	
+	<!-- Iconos del Menu -->
+	
+	<include subset="iconosmenu" name="Iconos OnFire">./art/iconos_onfire.xml</include>
+	<include subset="iconosmenu" name="Iconos w8 Metro">./art/iconos_w8metro.xml</include>
+	<include subset="iconosmenu" name="Iconos Base">./art/iconos_base.xml</include>	
+	
+	<!-- Iconos info sistema  -->
+	
+	<include subset="iconset" name="Standard Icons">./art/iconsets/default.xml</include>
+	<include subset="iconset" name="SNES">./art/iconsets/snes.xml</include>
+	<include subset="iconset" name="SNES ALT">./art/iconsets/snesalt.xml</include>
+	<include subset="iconset" name="XBox">./art/iconsets/xbox.xml</include>
+	<include subset="iconset" name="PSX">./art/iconsets/psx.xml</include>
+	
+	<!-- Tipos de vista -->
+	
+	<include subset="systemview" name="Hyperspin">./art/systemview/wheel-mabedeep.xml</include>
+	<include subset="systemview" name="Horizontal">./art/systemview/horizontal.xml</include>
+	<include subset="systemview" name="Legacy">./art/systemview/legacy.xml</include>
+	<include subset="systemview" name="Transparente">./art/systemview/transparent.xml</include>
+	<include subset="systemview" name="Simple">./art/systemview/verticalone.xml</include>
+	<include subset="systemview" name="Vertical">./art/systemview/vertical.xml</include>
+	<include subset="systemview" name="wheel">./art/systemview/wheel.xml</include>
+	<include subset="systemview" name="Mabedeep Wheel">./art/systemview/wheel-mabedeep2.xml</include>
+	
+	<!-- Opciones para System view background -->	
+	
+	<include subset="systembackground" name="Sistemas mini video">./art/systemsbk/sistemas-mini-video.xml</include>
+	<include subset="systembackground" name="Mini-consoles-mabedeep-wheel">./art/systemsbk/consoles-mabedeep-wheel.xml</include>
+    <include subset="systembackground" name="Consolas">./art/systemsbk/batomachines.xml</include>
+    <include subset="systembackground" name="Random image">./art/systemsbk/image.xml</include>
+    <include subset="systembackground" name="Random box">./art/systemsbk/box.xml</include>
+    <include subset="systembackground" name="Mini random image">./art/systemsbk/smallscreen.xml</include>
+    <include subset="systembackground" name="Mini random box">./art/systemsbk/smallbox.xml</include>
+    <include subset="systembackground" name="Mini random video">./art/systemsbk/smallvideo.xml</include>
+	
+	<!-- Shader para EmulationStation -->
+	
+	<include subset="shader" name="Ninguno"/>
+    <include subset="shader" name="ScanLines">./art/scanlines.xml</include>
+    <include subset="shader" name="Crt">./art/crt.xml</include>
+
+</theme>

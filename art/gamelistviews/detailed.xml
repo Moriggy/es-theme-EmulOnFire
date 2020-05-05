@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	
+	<formatVersion>7</formatVersion>
+	<include>./theme.xml</include>
+	
+	<view name="detailed">
+  
+		<!-- Posicion y tamaño imagen juego -->
+
+		<image name="md_image">
+			<maxSize>0.35 0.46</maxSize>
+			<pos>0.5 0.575</pos>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<!-- Marquesina -->
+		
+		<image name="md_marquee">
+			<pos>0.50 0.9</pos>
+			<size>0.18 0.1</size>
+			<zIndex>3</zIndex>
+		</image>
+			
+		<video name="md_video">
+			<maxSize>0.405 0.435</maxSize>
+			<pos>0.5 0.575</pos>
+			<delay>1.0</delay>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<zIndex>1</zIndex>
+			<loops>1</loops>
+			<roundCorners>0.02</roundCorners>
+		</video>
+		
+		<image name="background">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>${backgroundImage_C}</path>
+			<zIndex>2</zIndex>
+		</image>
+		
+		<!-- Posicion de listado de juegos -->
+			
+		<textlist name="gamelist">
+			<selectorImagePath>./art/selector.png</selectorImagePath>
+			<selectorColor>719CC6</selectorColor>
+			<selectedColor>719CC6</selectedColor>
+			<primaryColor>dee0e8</primaryColor>
+			<secondaryColor>eac428</secondaryColor>
+			<fontPath>./art/amiga4ever pro.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.02</fontSize>
+			<alignment>left</alignment>
+			<pos>0.0178 0.265</pos>
+			<size>0.30 0.68</size>
+			<lineSpacing>1.5</lineSpacing>
+			<horizontalMargin>0.015</horizontalMargin>
+			<zIndex>3</zIndex>				
+		</textlist>
+
+		<!-- Metadatos -->
+			
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite">
+			<color>ffffff</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+			<size>0.12 0.04</size>
+			<zIndex>3</zIndex>
+		</text>
+					
+		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_favorite ,md_releasedate, md_lastplayed">
+			<color>ffffff</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.015</fontSize>
+			<size>0.14 0.04</size>
+			<zIndex>3</zIndex>
+		</text>
+
+		<!-- Descripcion juego -->
+		
+		<text name="md_description">
+			<color>00d2f3</color>
+			<pos>0.705 0.5</pos>
+			<size>0.28 0.22</size>
+			<fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+			<forceUppercase>1</forceUppercase>
+			<zIndex>3</zIndex>			
+		</text>
+			
+		<!-- Posiciones info juegos -->
+		
+		<text name="md_lbl_rating">
+			<pos>0.71 0.34</pos>
+		</text>
+			
+		<rating name="md_rating">
+			<pos>0.72 0.4</pos>
+			<size>0.028 0.028</size>
+			<filledPath>./art/rating_empty.svg</filledPath>
+			<unfilledPath>./art/rating_filled.svg</unfilledPath>
+		</rating>
+			
+		<text name="md_lbl_players">
+			<pos>0.71 0.44</pos>
+		</text>
+			
+		<text name="md_players">
+			<pos>0.72 0.46</pos>			
+		</text>
+			
+		<text name="md_lbl_genre">
+			<pos>0.82 0.34</pos>
+		</text>
+			
+		<text name="md_genre">
+			<pos>0.83 0.385</pos>
+		</text>
+			
+		<text name="md_lbl_releasedate">
+			<pos>0.82 0.44</pos>
+		</text>
+			
+		<datetime name="md_releasedate">
+			<pos>0.83 0.46</pos>
+		</datetime>
+			
+		<text name="md_lbl_developer, md_lbl_publisher, md_lbl_lastplayed, md_lbl_playcount, md_lbl_favorite">
+			<pos>1 1</pos>
+		</text>
+		
+		<text name="md_developer, md_publisher, md_lastplayed, md_playcount, md_favorite">
+			<pos>1 1</pos>
+		</text>
+		
+		<image name="md_hidden">
+			<pos>0.823 0.700</pos>
+			<path>./art/hidden.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+			
+		<image name="md_kidgame">
+			<pos>0.883 0.700</pos>
+			<path>./art/kid.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+		
+		<image name="md_favorite">
+			<pos>0.940 0.700</pos>
+			<path>./art/favorite.svg</path>
+			<maxSize>0.032 0.032</maxSize>
+			<origin>0.5 0.5</origin>
+			<color>969696</color>
+		</image>
+	
+	</view>
+	
+</theme>

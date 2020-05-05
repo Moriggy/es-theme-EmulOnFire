@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+	
+	<formatVersion>7</formatVersion>
+	<include>./theme.xml</include>
+	
+	<view name="grid">
+	
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>${backgroundImage}</path>
+			<zIndex>1</zIndex>
+		</image>
+		
+		<image name="logo">
+			<pos>0.5 0.1</pos>
+			<maxSize>0.3 0.126</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>3</zIndex>
+		</image>
+		
+		<image name="bottom" extra="true">
+			<pos>0 1</pos>
+			<origin>0 1</origin>   
+			<size>1 0.065</size>
+			<path>./art/bottom.png</path>      
+			<color>${bottomBarColor}</color>
+			<zIndex>20</zIndex>
+		</image>
+	
+		<helpsystem name="help">
+			<pos>0.1 0.015</pos>
+			<size>0.47 0.20</size>
+			<iconColor>${baseColor}</iconColor>
+			<fontSize>0.021</fontSize>
+			<fontPath>./art/amiga4ever pro.ttf</fontPath>
+		</helpsystem>
+	
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+		  <color>A0A0B000</color>
+		  <fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+		</text>
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
+		  <color>ffffff00</color>
+		  <fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+		</text>
+		<datetime name="md_releasedate, md_lastplayed">
+		  <color>ffffff00</color>
+		  <fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.017</fontSize>
+		</datetime>
+		<rating name="md_rating">
+		  <pos>0.88 0.88</pos>
+		  <size>0.05 0.03</size>
+		  <color>FFFFFF</color>
+		  <unfilledColor>808080</unfilledColor>
+		</rating>
+		
+		<imagegrid name="gamegrid">
+
+		  <margin>0.005 0.010</margin>
+		  <pos>0.025 0.16</pos>
+		  <size>0.950 0.34</size>
+		  <padding>0.03 0.03 0.03 0.1</padding>
+		  <zIndex>2</zIndex>
+		  <autoLayout>5 2</autoLayout>
+		  <autoLayoutSelectedZoom>1.12</autoLayoutSelectedZoom>
+		  <animateSelection>true</animateSelection>
+		  <centerSelection>false</centerSelection>
+		</imagegrid>
+		
+		<gridtile name="default">
+		  <backgroundColor>FFFFFF00</backgroundColor>
+		  <backgroundCornerSize>9 9</backgroundCornerSize>
+		  <selectionMode>image</selectionMode>
+		  <padding>5 5</padding>
+		  <imageColor>FFFFFFB0</imageColor>
+		</gridtile>
+		<gridtile name="selected">
+		  <backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
+		  <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
+		  <imageColor>FFFFFFFF</imageColor>
+		</gridtile>
+		<text name="gridtile">
+		  <color>D0D0D0</color>
+		  <backgroundColor>00000000</backgroundColor>
+		  <fontSize>0.022</fontSize>
+		  <alignment>center</alignment>
+		  <size>1 0.24</size>
+		</text>
+		<text name="gridtile:selected">
+		  <color>FFFFFF</color>
+		  <glowColor>${glowColor}</glowColor>
+		  <glowSize>3</glowSize>
+		</text>
+
+		<ninepatch name="gridtile.background:selected">
+		  <animateColor>EFEF60B0</animateColor>
+		  <animateColorTime>350</animateColorTime>
+		</ninepatch>
+
+	</view>
+	
+	<customView name="Boxes" inherits="grid" displayName="${basicGridName}">
+    <imagegrid name="gamegrid">
+      <autoLayout>6 2</autoLayout>
+      <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
+    </imagegrid>
+    <text name="gridtile">
+      <visible>false</visible>
+    </text>
+    <text name="gridtile:selected">
+      <visible>false</visible>
+    </text>
+    <image name="gridtile.favorite">
+      <path>:/star_filled.svg</path>
+      <pos>0.91 0.09</pos>
+      <maxSize>0.14 0.14</maxSize>
+      <origin>0.5 0.5</origin>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>FFFF00B0</color>
+    </image>
+  </customView>
+  
+  <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+    <text name="md_name">
+      <color>ffffffff</color>
+      <pos>0.04 0.76</pos>
+      <size>0.92 0.10</size>
+      <alignment>center</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>4</glowSize>
+    </text>
+    <text name="md_developer">
+      <color>808080ff</color>
+      <pos>0.04 0.80</pos>
+      <size>0.92 0.10</size>
+      <alignment>center</alignment>
+      <fontSize>0.020</fontSize>
+      <glowColor>00000016</glowColor>
+      <glowSize>3</glowSize>
+    </text>
+    <imagegrid name="gamegrid">
+      <pos>0 0.16</pos>
+      <size>1 0.774</size>
+      <padding>0.05 0.14 0.05 0.30</padding>
+      <scrollDirection>horizontal</scrollDirection>
+      <autoLayout>5 1</autoLayout>
+      <autoLayoutSelectedZoom>1.50</autoLayoutSelectedZoom>
+      <margin>0.005 0.010</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+    </imagegrid>
+    <gridtile name="default">
+      <padding>64 16</padding>
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+      <imageSizeMode>maxSize</imageSizeMode>
+      <imageColor>FFFFFFAA</imageColor>
+      <reflexion>0.24 0.0</reflexion>
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+      <padding>64 16</padding>
+    </gridtile>
+    <text name="gridtile">
+      <visible>false</visible>
+      <color>80808080</color>
+      <fontSize>0.016</fontSize>
+      <size>1 0</size>
+    </text>
+    <text name="gridtile:selected">
+      <color>FFFFFF00</color>
+      <fontSize>0.035</fontSize>
+      <size>1 0</size>
+    </text>
+  </customView>
+  
+  <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
+    <imagegrid name="gamegrid">
+      <autoLayout>3 2</autoLayout>
+      <autoLayoutSelectedZoom>1.03</autoLayoutSelectedZoom>
+      <imageSource>image</imageSource>
+      <margin>0.005 0.010</margin>
+      <showVideoAtDelay>800</showVideoAtDelay>
+      <zIndex>10</zIndex>
+    </imagegrid>
+    <gridtile name="default">
+      <backgroundImage/>
+      <backgroundCenterColor>40404080</backgroundCenterColor>
+      <backgroundEdgeColor>40404080</backgroundEdgeColor>
+      <padding>1 1</padding>
+      <imageSizeMode>minSize</imageSizeMode>
+      <imageColor>A0A0A0FF</imageColor>
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <backgroundCornerSize>0.06</backgroundCornerSize>
+    </gridtile>
+    <gridtile name="selected">
+      <padding>5 5</padding>
+      <imageColor>FFFFFFFF</imageColor>
+      <backgroundCornerSize>0 0</backgroundCornerSize>
+      <backgroundCornerSize>0.06</backgroundCornerSize>
+    </gridtile>
+
+    <image name="gridtile.image">
+      <roundCorners>0.06</roundCorners>
+    </image>
+    <text name="gridtile">
+      <color>D0D0D0D0</color>
+      <backgroundColor>00000000</backgroundColor>
+      <fontPath>./art/amiga4ever pro.ttf</fontPath>
+      <fontSize>0.030</fontSize>
+      <alignment>center</alignment>
+      <singleLineScroll>false</singleLineScroll>
+      <padding>0.08 0</padding>
+      <size>0 0.23</size>
+      <glowColor>00000060</glowColor>
+      <glowSize>1</glowSize>
+    </text>
+    <text name="gridtile:selected">
+      <singleLineScroll>false</singleLineScroll>
+      <color>FFFFFF</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>2</glowSize>
+    </text>
+    <image name="gridtile.favorite">
+      <path>:/star_filled.svg</path>
+      <pos>0.93 0.07</pos>
+      <maxSize>0.10 0.10</maxSize>
+      <origin>0.5 0.5</origin>
+      <horizontalAlignment>right</horizontalAlignment>
+      <color>FFFF0080</color>
+    </image>
+    <image name="gridtile.favorite:selected">
+      <color>FFFF00D0</color>
+    </image>
+  </customView>
+  
+  <customView name="Hyperspin" inherits="grid" tinyScreen="false">
+		
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./art/arcade.png</path>
+			<zIndex>2</zIndex>
+		</image>
+		
+      <video name="md_video">
+      <pos>0.68 0.55</pos>
+      <maxSize>0.50 0.50</maxSize>
+      <origin>0.5 0.5</origin>
+      <delay>0.1</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>false</showSnapshotDelay>
+      <loops>5</loops>
+      <roundCorners>0.02</roundCorners>
+	  <zIndex>1</zIndex>
+    </video>
+	
+	<image name="md_image">
+      <pos>0.68 0.12</pos>
+      <size>0.43 0.20</size>
+      <origin>0.5 0.5</origin>
+	  <zIndex>1</zIndex>
+    </image>
+	
+    <rating name="md_rating">
+      <pos>2 2</pos>
+      <size>0.05 0.03</size>
+      <color>FFFF00</color>
+      <unfilledColor>808080</unfilledColor>
+    </rating>	
+
+    <text name="md_name">
+      <color>ffffffff</color>
+      <pos>2 2</pos>
+      <size>0.92 0.10</size>
+      <alignment>center</alignment>
+      <glowColor>00000016</glowColor>
+      <glowSize>4</glowSize>
+    </text>
+    <text name="md_developer">
+      <color>808080ff</color>
+      <pos>2 2</pos>
+      <size>0.92 0.10</size>
+      <alignment>center</alignment>
+      <fontSize>0.020</fontSize>
+      <glowColor>00000016</glowColor>
+      <glowSize>3</glowSize>
+    </text>
+	
+    <imagegrid name="gamegrid">
+	<imageSource>marquee</imageSource>
+	<zIndex>15</zIndex>
+      <pos>0.07 0.0008</pos>
+      <size>0.29 1.13</size>
+      <padding>0.05 0.14 0.05 0.30</padding>
+      <scrollDirection>vertical</scrollDirection>
+      <autoLayout>1 5</autoLayout>
+      <autoLayoutSelectedZoom>1.8</autoLayoutSelectedZoom>
+      <margin>0.005 0.010</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+    </imagegrid>
+    <gridtile name="default">
+<!--       <padding>64 16</padding>
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+	  <maxSize>0.37 0.45</maxSize>
+      <imageColor>FFFFFFAA</imageColor>
+      <reflexion>0 0</reflexion> -->
+    </gridtile>
+    <gridtile name="selected">
+      <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+      <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+      <padding>64 16</padding>
+    </gridtile>
+    <text name="gridtile">
+      <visible>false</visible>
+      <color>80808080</color>
+      <fontSize>0.016</fontSize>
+      <size>0.5 0</size>
+    </text>
+    <text name="gridtile:selected">
+      <color>FFFFFF00</color>
+      <fontSize>0.035</fontSize>
+      <size>0.6 0</size>
+    </text>
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+	      </ninepatch> 
+
+  </customView>
+	
+	<!-- Opciones de vista para Cuadricula -->
+	
+	<subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
+		<include name="no" displayName="${no}"/>
+		<include name="yes" displayName="${yes}">./art/grid/videoboxes.xml</include>
+	</subset>
+	
+	<subset name="zoomboxes" displayName="${zoomboxesSubsetName}" appliesTo="Boxes,grid">
+		<include name="no" displayName="${no}"/>
+		<include name="yes" displayName="${yes}">./art/grid/zoomboxes.xml</include>
+	</subset>
+	
+	<subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Boxes,grid">
+		<include name="vertical"/>
+		<include name="horizontal">./art/grid/scrollhorz.xml</include>
+	</subset>
+	
+	<subset name="hideselection" displayName="${hideselectionSubsetName}" appliesTo="Boxes,grid">
+		<include name="yes" displayName="${yes}">./art/grid/hidesel.xml</include>
+		<include name="no" displayName="${no}"/>
+	</subset>
+	
+	<subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
+		<include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
+		<include name="no" displayName="${no}"/>
+	</subset>
+
+	<!-- Subset options for Tiles view -->
+	<subset name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles">
+		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
+	</subset>
+	
+	<subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Carousel,Boxes,grid">
+		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}">./art/grid/blinkbordersoff.xml</include>
+	</subset>
+	
+	<subset name="videotiles" displayName="Videos" appliesTo="Tiles">
+		<include name="yes" displayName="${yes}"/>
+		<include name="no" displayName="${no}">./art/tiles/novideo.xml</include>
+	</subset>
+	
+	<subset name="marqueetiles" displayName="Logos" appliesTo="Tiles">
+		<include name="yes" displayName="${yes}">./art/tiles/marquee.xml</include>
+		<include name="no" displayName="${no}"/>
+	</subset>
+	
+</theme>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: Carbon
+version: 2.0
+author: Moriggy (EmulOS Team)
+license: creative commons CC-BY-NC-SA
+originally based on: "simple" by nils bonenberger
+-->
+<theme>
+	
+	<formatVersion>7</formatVersion>
+	<include>./config.xml</include>
+	<include>./art/gamelistviews/detailed.xml</include>
+	<include>./art/gamelistviews/basic.xml</include>
+	<include>./art/gamelistviews/grid.xml</include>
+
+	<view name="system">
+			  
+		<image name="background" extra="static">
+			<tile>false</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<color>${backgroundColor}</color>
+			<zIndex>2</zIndex>
+		</image>
+		  
+		<text name="logoText">
+			<fontPath>./art/Halo3.ttf</fontPath>
+			<color>${baseColor}</color>
+			<forceUppercase>true</forceUppercase>
+		</text>
+		
+		<image name="logo">
+			<!-- try png -->
+			<path>./art/logos/${system.theme}.png</path>
+			<!-- try svg -->
+			<path>./art/logos/${system.theme}.svg</path>
+			<!-- check if lang resources exist -->
+			<path>./art/logos/${system.theme}-${lang}.png</path>
+			<path>./art/logos/${system.theme}-${lang}.svg</path>
+		</image>
+		
+	</view>
+
+	<view name="screen">
+		<text name="clock">
+			<textColor>${colorHora}</textColor>
+			<color>${colorHora}</color>
+			<fontSize>0.023</fontSize>
+			<fontPath>./art/Halo3.ttf</fontPath>
+			<pos>0.905 0.954</pos>
+			<size>0.062 0.031</size>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+		</text>
+		
+		<controllerActivity name="controllerActivity">
+			<pos>0.01 0.012</pos>
+			<size>0.15 0.025</size>
+			<itemSpacing>0.003</itemSpacing>
+			<imagePath>./art/gamepad.svg</imagePath>
+			<color>FFFFFF80</color>
+			<activityColor>A0A0FFC0</activityColor>
+			<hotkeyColor>FFA0A0C0</hotkeyColor>
+		</controllerActivity>
+	</view>
+  
+	<view name="menu">
+
+		<menuText name="menutitle">
+			<fontPath>./art/Halo3.ttf</fontPath>
+			<fontSize>0.044</fontSize>
+			<color>${menucolortitulo}</color>
+		</menuText>
+		
+		<menuText name="menufooter">
+			<fontPath>./art/joystix monospace.ttf</fontPath>
+			<fontSize>0.022</fontSize>
+			<color>777777FF</color>
+		</menuText>
+		
+		<menuText name="menutext">
+			<fontPath>./art/zeldadxt.ttf</fontPath>
+			<fontSize>0.034</fontSize>
+			<color>${menucolortexto}</color>
+			<separatorColor>${menucolorseparador}</separatorColor>
+			<selectorColor>${baseColor}</selectorColor>
+			<selectorColorEnd>${gradientEndColor}</selectorColorEnd>
+			<selectedColor>${menucolortextoselecionado}</selectedColor>
+			<selectorGradientType>vertical</selectorGradientType>
+		</menuText>
+		
+		<menuTextSmall name="menutextsmall">
+			<fontPath>./art/joystix monospace.ttf</fontPath>
+			<fontSize>0.02</fontSize>
+			<color>${menucolortitulo}</color>
+		</menuTextSmall>
+
+		<menuBackground name="menubg">
+			<color>${menucolorfondo}</color>
+			<cornerSize>45 45</cornerSize>
+			<path>./art/frame.png</path>
+		</menuBackground>
+		
+		<menuTextEdit name="menutextedit">
+			<inactive>./art/textinput_ninepatch.png</inactive>
+			<active>./art/textinput_ninepatch_active.png</active>
+		</menuTextEdit>
+	
+	</view>
+  
+	<view name="system,basic,detailed,grid">
+		<helpsystem name="help">
+			<textColor>${pauseColorTexto}</textColor>
+			<iconColor>${pauseColorIconos}</iconColor>
+		</helpsystem>
+	</view>
+  
+	<view name="basic,detailed,grid">
+	
+		<text name="logoText">
+			<pos>0.02 0.02</pos>
+			<size>0.98 0.126</size>
+			<alignment>center</alignment>
+			<fontSize>0.08</fontSize>
+			<fontPath>./art/Halo3.ttf</fontPath>
+			<color>${baseColor}</color>
+		</text>
+		
+		<image name="logo">
+			<!-- try png -->
+			<path>./art/logos/${system.theme}.png</path>
+			<path>./art/logos/${system.theme}.svg</path>
+			<path>./art/logos/${system.theme}-${lang}.png</path>
+			<path>./art/logos/${system.theme}-${lang}.svg</path>
+			<!-- if system2 exists, take this version -->
+			<path>./art/logos/${system.theme}2.svg</path>
+			<pos>0.84 0.75</pos>
+			<size>0.25 0.1</size>
+			<zIndex>3</zIndex>
+		</image>
+		
+	</view>
+	
+	<!-- Subset options for help -->
+	
+	<subset name="helpsystem" displayName="${helpSubsetName}">
+		<include name="colored" displayName="${colored}">./art/systemview/colorhelp.xml</include>
+		<include name="standard"/>
+	</subset>
+	
+</theme>
